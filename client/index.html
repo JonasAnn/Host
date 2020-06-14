@@ -4,16 +4,12 @@
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css"> 
   <link rel="shortcut icon" type="image/png" href="#"> 
   <title>Animate</title> 
  </head>
  <body>
-      <!-- backgound image -->
-      <!-- <div class="background--image--box">
-        
-      </div> -->
     <header class="header">
         <!-- Top loader -->
         <div class="loader--box">
@@ -46,92 +42,107 @@
         <!-- body of header -->
         <div class="header__body">
             <!-- Scroll design -->
-            <div class="header__scroll">
-               <div class="scroller">
-               </div>
                <!-- pointers -->
-               <div class="scroller__pointers">
-                <div class="pointer--one">
-                     <!-- 1 -->
-                </div>
-                <div class="pointer--two ">
-                     <!-- 2 -->
-                 </div>
-                 <div class="pointer--three">
-                     <!-- 3 -->
-                 </div>
-            </div>
+            <div class="scroller__pointers">
+                <a class="pointer__item current__pointer--item" name="africa" rel="0" role="button"></a>
+                <a class="pointer__item" name="america" rel="1" role="button"></a>
+                <a class="pointer__item" name="asia" rel="2" role="button"></a>
+                <a class="pointer__item" name="australia" rel="3" role="button"></a>
+                <a class="pointer__item" name="europe" rel="4" role="button"></a>
             </div>
             <!-- continent details box -->
 
             <div class="header__data--box">
+                <!-- continent starter placeholder -->
+                <div class="continent sideshow"  id="continent-starter"></div>
+                <!-- africa box -->
+                <div class="header__data continent currentshow" id="africa">
+                    <h1 class="primary__header continent-name">
+                        Africa
+                    </h1>
+                    <p class="primary__paragraph continent-desc">
+                        Lorem ipsum dolor sit amet consectetur
+                        repudiandae quisquam nemo distinctio 
+                        iusto facilis voluptas asperiores.
+                    </p>
+                    <button class="btn btn--africa continent-btn">Explore
+                    <span class="btn--arrow">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </span> 
+                    </button>
+                </div>
+
+                  <!-- america box -->
+                    <div class="header__data continent sideshow" id="america">
+                        <h1 class="primary__header continent-name">
+                            America
+                        </h1>
+                        <p class="primary__paragraph continent-desc">
+                            Lorem ipsum dolor sit amet consectetur
+                            repudiandae quisquam nemo distinctio 
+                            iusto facilis voluptas asperiores.
+                        </p>
+                        <button class="btn btn--america continent-btn">Explore
+                        <span class="btn--arrow">
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </span> 
+                        </button>
+                    </div>
+
                 <!-- asia box -->
-                <div class="header__data asia">
-                <h1 class="primary__header asia--header">
+                <div class="header__data continent" id="asia">
+                <h1 class="primary__header continent-name">
                     Asia
                 </h1>
-                <p class="primary__paragraph asia--paragraph">
+                <p class="primary__paragraph continent-desc">
                     Lorem ipsum dolor sit amet consectetur
                     repudiandae quisquam nemo distinctio 
                     iusto facilis voluptas asperiores.
                 </p>
-                <button class="btn btn--asia asia--btn">Explore
+                <button class="btn btn--asia continent-btn">Explore
                    <span class="btn--arrow">
                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                    </span> 
                 </button>
             </div>
 
-             <!-- africa box -->
-             <div class="header__data africa">
-                <h1 class="primary__header">
-                    Africa
+             <!-- australia box -->
+             <div class="header__data continent" id="australia">
+                <h1 class="primary__header continent-name">
+                    Australia
                 </h1>
-                <p class="primary__paragraph">
+                <p class="primary__paragraph continent-desc">
                     Lorem ipsum dolor sit amet consectetur
                     repudiandae quisquam nemo distinctio 
                     iusto facilis voluptas asperiores.
                 </p>
-                <button class="btn btn--africa">Explore
+                <button class="btn btn--asia continent-btn">Explore
                    <span class="btn--arrow">
                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                    </span> 
                 </button>
             </div>
-
+      
+             
               <!-- europe box -->
-              <div class="header__data europe">
-                <h1 class="primary__header">
+              <div class="header__data  continent" id="europe">
+                <h1 class="primary__header continent-name">
                     Europe
                 </h1>
-                <p class="primary__paragraph">
+                <p class="primary__paragraph continent-desc">
                     Lorem ipsum dolor sit amet consectetur
                     repudiandae quisquam nemo distinctio 
                     iusto facilis voluptas asperiores.
                 </p>
-                <button class="btn btn--europe">Explore
+                <button class="btn btn--europe continent-btn">Explore
                    <span class="btn--arrow">
                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                    </span> 
                 </button>
             </div>
 
-             <!-- america box -->
-             <div class="header__data america">
-                <h1 class="primary__header">
-                    America
-                </h1>
-                <p class="primary__paragraph">
-                    Lorem ipsum dolor sit amet consectetur
-                    repudiandae quisquam nemo distinctio 
-                    iusto facilis voluptas asperiores.
-                </p>
-                <button class="btn btn--america">Explore
-                   <span class="btn--arrow">
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                   </span> 
-                </button>
-            </div>
+            <!-- continent finish placeholder -->
+            <div class="continent"  id="continent-finish"></div>
 
             </div>
 

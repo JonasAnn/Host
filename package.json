@@ -11,7 +11,6 @@
     "devserver": "live-server",
     "prefix:css": "postcss client/css/style.css --use=autoprefixer --output=client/css/style-prefix.css",
     "compress:css": "node-sass client/css/style-prefix.css client/css/style.css --output-style compressed"
-
   },
   "browserslist": [
     "last 5 versions"
