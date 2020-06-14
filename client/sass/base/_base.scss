@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+     
+    @include respond(tab-land){
+        font-size: 56.25%;
+    }
+    @include respond(tab-port){
+        font-size: 50%;
+    }
+    @include respond(big-desktop){
+        font-size: 75%;
+    }
+}
+body{
+    background-color: gainsboro;
+    position: relative;
+}
+.background--image{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+

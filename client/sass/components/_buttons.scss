@@ -1,0 +1,25 @@
+.btn{
+    font-size: 2rem;
+    padding: 1.3rem 1.5rem;
+    font-weight: 500;
+    border: none;
+    color: #ffffff;
+    margin-top: 3.5rem;
+    &--arrow{
+        display: inline-block;
+        padding-left: 4rem;
+    }
+    &--asia {
+        background-color: rgb(18, 17, 105);
+    }
+    &--africa {
+        background-color: rgb(31, 85, 31);
+    } 
+    &--europe {
+        background-color: rgb(146, 16, 16);
+    }   
+    &--america {
+        background-color: rgb(13, 99, 121);
+    } 
+ 
+} 

@@ -1,0 +1,50 @@
+// design for navbar
+
+.navbar{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8rem;
+    align-items: center;
+    background-color: transparent;
+    opacity: 0;
+    animation: topToBottom .5s ease .5s;
+    animation-fill-mode: forwards;
+    
+    &__logo--box{
+        width: 5%;
+        height: auto;
+    }
+    &__logo{
+        object-fit: contain;
+        width: 100%;
+    }
+    &__list{
+       list-style: none; 
+       font-size: 2rem;
+       font-weight: 600;
+    }
+
+    &__item{
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 4rem;
+        }
+    }
+
+    &__link{
+        text-decoration: none;
+        color: #ffffff;
+        border-bottom: .2rem transparent solid;
+        display: inline-block;
+        padding-bottom: .5rem;
+        transition: all .1s ease;
+        &:hover,
+        &:focus,
+        &:active{
+            border-bottom: .2rem yellow solid;
+        }
+    }
+
+}

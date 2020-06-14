@@ -1,0 +1,118 @@
+.card{
+    &--one{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 55vh;
+    width: 30%;
+    opacity: 0;
+    animation: cardLeft .5s ease;
+    animation-fill-mode: forwards;
+    }
+    &--side{
+        height: 55vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 1rem;
+        box-shadow: 3px 6px 24px -9px rgba(0, 0, 0, 0.75);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        }
+    &--one--front{
+        background-color: palevioletred;
+    }
+    &--one--back{
+        background-color: gold;
+    }
+
+    &--one:hover &--one--front {
+        animation: rotateFront .6s;
+    }
+
+    &--one:hover &--one--back {
+        animation: rotateBack .6s ;
+    }
+
+    &--two,
+    &--three{
+        perspective: 150rem;
+        -moz-perspective: 150rem;
+        position: relative;
+        height: 50vh;
+        width: 30%;
+        margin: 1rem 0 0 0;
+        opacity: 0;
+        }
+
+        &--two{
+            animation: cardL .5s cubic-bezier(.84,.28,.24,1.34);
+            animation-fill-mode: forwards;
+        }
+        &--three{
+            animation: cardL .5s cubic-bezier(.86,.26,.01,1.54);
+            animation-fill-mode: forwards;
+        }
+        &--set{
+        height: 50vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 1rem;
+        transition: all .8s;
+        box-shadow: 3px 6px 24px -9px rgba(0, 0, 0, 0.75);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+     &--two--front{
+        background-color: indigo;
+    }
+    &--two--back{
+       background-color: lemonchiffon;
+        transform: rotateY(180deg);
+    }
+    &--three--front{
+       background-color: lightseagreen;
+    }
+    &--three--back{
+       background-color: limegreen;
+        transform: rotateY(180deg);
+    }
+
+    &--two:hover &--two--front,
+    &--three:hover &--three--front {
+        transform: rotateY(-180deg);
+    }
+
+    &--two:hover &--two--back,
+    &--three:hover &--three--back {
+        transform: rotateY(0);
+    }
+
+}
+
+.zoom{
+width: 100%;
+height: 100vh;
+top: -2rem;
+left: 0;
+border-radius: 0;
+z-index : -1;
+box-shadow: none;
+position: absolute;
+transition: all 0.6s cubic-bezier(.84,.28,.26,.92);
+}
+.zoom--image{
+    height: 100vh;
+    position: absolute;
+    }

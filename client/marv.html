@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+
+        .settings-btn + label {
+        position: fixed;
+        top: 130px;
+        right: 0;
+        display: block;
+        width: 35px;
+        color: #e83737;    
+        text-align: center;
+        background: #fff;
+        cursor: pointer;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+        position: absolute;
+        visibility: hidden;
+        }
+        
+        .bg1{
+            background:url("https://i.pinimg.com/originals/a8/29/b5/a829b55236e7f738eb9ef315eb7d808e.jpg")
+        }
+
+        .bg2{
+            background:url("https://cdn.wallpapersafari.com/83/25/C4NX2d.jpg")
+        }
+
+         
+    </style>
+</head>
+<body>
+    <input id="settings-btn" class="settings-btn" type="checkbox">
+    <label for="settings-btn" class="settings-box-element"></label>
+
+    <div class="buttons-wrapper settings-box-element">
+        <!-- background styles -->
+        <!-- light background (#eaeaea) -->
+        <input id="light-layout" class="light-layout" type="radio" name="layout" checked>
+        <label for="light-layout" class="layout-buttons settings-box-element">
+        Light Background</label>
+
+        <!-- dark background (#494949) -->
+        <input id="dark-layout" class="dark-layout" type="radio" name="layout">
+        <label for="dark-layout" class="layout-buttons settings-box-element">
+        Dark Background
+        </label>
+
+        <!-- image background -->
+        <input id="image-layout" class="image-layout" type="radio" name="layout">
+        <label for="image-layout" class="layout-buttons settings-box-element">
+        Image Background</label>
+
+        <!-- pattern background -->    
+        <input id="pattern-layout" class="pattern-layout" type="radio" name="layout">
+        <label for="pattern-layout" class="layout-buttons settings-box-element">
+        Pattern Background</label>
+
+        <!-- hide/show content -->
+        <input id="hide-show-content" class="hide-show-content" type="checkbox">
+        <label for="hide-show-content" class="layout-buttons settings-box-element">
+        Hide/Show content</label>
+    </div>
+</body>
+</html>
